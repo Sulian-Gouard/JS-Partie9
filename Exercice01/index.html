@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles.css">
+  <title>Exercice 1</title>
+</head>
+
+<body>
+
+  <h1>Exercice 1</h1>
+  <p>A l'aide de la librairie cleave.js, créer un formulaire de paiement. Ajouter un champ nom et un champ prénom, un
+    champ numéro de téléphone, un champ date de commande et un champ carte bancaire.</p>
+
+  <form>
+    <p>Nom :
+      <input id="name" class="inputName" placeholder="Entrez vote Nom" onkeyup="checkLastname()" required></p>
+      <span class="error" id="errorname"></span>
+    <p>Prénom :
+      <input id="surname" class="inputSurname" placeholder="Entrez vote Prénom" onkeyup="checkFirstName()" required></p>
+      <span class="error" id="errorsurname"></span>
+    <p>Numéro :
+      <input class="inputPhone" placeholder="Numéro de téléphone"></p>
+    <p>Date :
+      <input class="inputDelivaryDate" placeholder="Date: JJ/MM/AAAA"></p>
+    <p>Numéro de carte:
+      <input class="inputCard" placeholder="Numéro de carte bancaire"></p>
+      <span class="type"></span>
+  </form>
+
+
+
+  
+  <script src="assets/js/cleave.js"></script>
+  <script src="assets/js/cleave-phone.i18n.js"></script>
+  <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>
